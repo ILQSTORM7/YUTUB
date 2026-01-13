@@ -12,96 +12,133 @@
             box-sizing: border-box;
         }
         html,body{
+            color: white;
             height: 100%;
             /* display: flex; */
-            flex-direction: column;
+            /* flex-direction: column; */
             background-color: black;
+            overflow: hidden;
         }
         .header{
             position: sticky;
             display: flex;
             top: 0;
-            justify-content:center;
+            justify-content:space-evenly;
             align-items: center;
             height: 60px;
-            padding: 10px 20px;
-            background-color:rgb(13, 7, 7);
+            padding: 0px 20px;
+            background-color:rgb(16, 15, 15);
             /* border-bottom: 1px solid rgb(213, 206, 206); */
             z-index: 100;
 
         }
         .logo{
-            background: url(YUTUBE.png)center/cover;
-            color: rgb(238, 232, 232);
+            /* color: rgb(250, 240, 240); */
             font-weight: bold;
             display: flex;
             align-items: center;
-            gap: 10px;
-            
+            font-size: 20px;            
+            margin-right: 20px;
+            background-size: 30px 30px;
+            padding-left: 40px;
 
 
+
+
+        }
+        .sekil{
+            width: 30px;
+            height: 30px;
+            background: url(yutube.png)center/cover no-repeat;            
+            background-size: 30px 30px;
+            border-radius: 29px;
         }
         
         .header input{
         width: 500px;   
-        padding: 15px 20px;
+        padding: 10px 20px;
         background-color: black;
         border-radius: 25px;
         outline: none;
-        border: 1px solid rgb(0, 0, 0);
+        border: 1px solid rgb(244, 237, 237);
+        color:rgb(234, 16, 16);
         }
         .box{
             display: flex;
+            height:(100%-60px);
+        }
+        .content{
+            display: flex;
             flex: 1;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+            overflow-y: auto;
         }
         .menyu{
-            width: 240px;
-            background: rgb(15, 13, 13);
-            height: 100%;
+            width: 220px;
+            background: black;
             padding: 10px;
+            overflow-y: auto;
         }
-        a{
+        .menyu a{
             display: block;
             padding: 12px;
             text-decoration: none;
-            color: rgb(238, 4, 4);
-            /* border-radius: 8px; */   
+            color: rgb(248, 6, 6);
+            border-radius: 8px;
+             
         }
-        a:hover{
-            background-color: rgb(7, 4, 4);
+        .menyu a:hover{
+            background-color: rgb(9, 3, 3);
 
         }
+        .card{
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(20,20,20);
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            background: url(file.jpg)center/cover;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            background-color: rgb(35, 35, 35);
+
+        }
+       
+        
         p{
-            color: white;
+            position: absolute;
+            color: rgb(248, 11, 11);
             padding: 20px;
+            bottom: 10px;
+            left: 10px;
         }
         
-        
-        
-         
-        </style>
+
+    </style>
 </head>
 <body>
     <div class="header">
-        <div class="logo">YOUTUBE </div>
+        <div class="logo sekil">YOUTUBE</div>
         <input type="text" placeholder="Search">
     </div>
-    <div class="box"></div>
-    <div class="menyu">
-     <a href="#">Home</a>
-     <a href="#">Shorts</a>
-     <a href="#">SETINGS</a>
+    <div class="box">
+        <div class="menyu">
+            <a href="#">Home</a>
+            <a href="#">Shorts</a>
+            <a href="#">Subscriptions</a>
+            <a href="#">Library</a>
+            </div>
+    <div class="content sekil1">
+        <div class="card">
+            <p>Image</p>
+        </div>
     </div>
-    <div class="content">
-        <p></p>
     </div>
-</style>
-</head>
-<body>
-
-
-</body>
-</html>
     
 </body>
 </html>
